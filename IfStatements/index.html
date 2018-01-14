@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+   <script src="script.js"></script>
+   <title>If-Else</title>
+</head>
+
+
+<body style= background-color:#ccc;>
+
+
+
+
+    <div class="container">
+      <div class= "jumbotron text-center" style= background-color:#3ab4a6;color:white; >
+         <h1>Introduction to Java</h1>
+      </div>
+    </div>
+
+
+
+<div class="color">
+  <div class="contect">
+
+     <h3><b>If/Elses and Relational Operators:</b></h3>
+
+  <p>  Sometimes when writing code, you will have to make decisions based
+     on data. This is called “control-flow”, because it controls where your
+      program will go next. </p>
+
+<p> The most common way to make decision is using if-statements. If-statements
+   allow the programmer to ask if something is true or false, and then do
+   something based on that result. Its used exactly how we use “ifs” in real
+    life. For example, a parent may say to their child, “If you pass the exam,
+    you can play video games”. Here, whether the child gets to play video games
+    depends entirely on whether he/she passes the exam.</p>
+
+<p> We can combine this concept with the concept of relational operators.
+   Relational operators allow you to compare a variable or value to another
+   variable or value. They use symbols you may recognize from elementary
+   math class. </p>
+<br/>
+< : less than<br/>
+> : greater than<br/>
+<= : less than or equal to<br/>
+>= : greater than or equal to<br/>
+== : equal to<br/>
+!= : not equal to<br/>
+<br/>
+
+<p>The ‘==’ operator should not be confused with the ‘=’ operator.
+  The ‘==’ operator simple checks if two things are equal in value,
+  while ‘=’ assigns the right side to the left side.</p>
+
+<p>Let’s look at some code now:</p>
+
+
+     <hr>
+     <br/>
+       <center><img src="image1.jpeg"  alt="HTML5 Icon" style="width:550px;height:380px;">
+  </center>
+     <br/><br/>
+     <hr>
+
+
+     <p>
+       Here we are using the equality operator (==) to check if the variable
+        ‘num’ is equal to 5, 10 or 15, using an if-statement to check for
+        each. The program will run the if-statements in order, checking first
+        if it’s 5, then 10, then 15. When it finds a particular condition that
+        happens to be true (in this case, its num == 10), it will print out the
+        corresponding statement. The first and third if-conditions were
+        evaluated as false, and thus the print statements underneath them
+        did not run. If the value of num were something other than 5, 10,
+        or 15, nothing would have been printed out.
+
+
+
+     <br/><br/>
+    If you wanted to check if variable is NOT equal to a certain value,
+    you would used the != operator in the same way.
+
+     </p>
+
+     <hr>
+
+     <br/>
+       <center><img src="image2.jpeg"  alt="HTML5 Icon" style="width:570px;height:380px;">
+       </center>
+     <br/><br/>
+     <hr>
+
+
+
+
+     <p>
+       Here you can see the <= and > operators in actions.
+       The second if-condition holds true, and thus its corresponding
+        print statement is executed.
+         <br/><br/>
+
+Sometimes if a condition is true, you want to do something,
+ but if its not true, you want to do something else. In this
+ case you can use an if-else statement.
+
+
+         </p>
+
+<hr>
+ <br/>
+      <center><img src="image3.jpeg"  alt="HTML5 Icon" style="width:550px;height:300px;">
+      </center>
+ <br/><br/>
+<hr>
+
+    <p>
+      Since the boolean variable ‘eggs-in-stock’ is set to false,
+       the if-condition is evaluated as false, and the print under
+        the else-clause will run. If the boolean variable was set to true,
+         the print statement under the if-clause would run. Either way,
+         you’re coming home with either eggs or milk, but not both.
+<br/><br/>
+      You can chain several of these conditions together to make if-else-if chains.
+
+    </p>
+
+<hr>
+ <br/>
+    <center><img src="image4.jpeg"  alt="HTML5 Icon" style="width:500px;height:500px;">
+    </center>
+    <br/><br/>
+<hr>
+
+<p>
+The code will start at the top of the chain, checking each condition.
+ Since the first if-clause is followed by else-if clauses, only the condition
+ that hold true first will be executed. Thus, even though 72 is greater than
+ 60, the student will not get a D, because the condition above that holds true
+ first, giving the student a C. The else at the end is if none of the above
+ conditions hold true. </p>
+</br>
+<strong>“And’s” and “Or’s”:</strong>
+<br/><br/>
+
+<p>
+Sometimes you’ll need to check if two conditions hold at the same time.
+ And other times you may need to check if at least one of multiple conditions
+ holds true. You can use the ‘and’ and ‘or’ operators to do that.
+<br/><br/>
+&& : and<br/>
+|| : or<br/>
+</p>
+
+<hr>
+ <br/>
+    <center><img src="image5.jpeg"  alt="HTML5 Icon" style="width:580px;height:350px;">
+    </center>
+    <br/><br/>
+<hr>
+
+<p>
+The if-condition is checking for two things simultaneously:<br/><br/>
+  (1)  Is num greater than or equal to 40?<br/>
+  (2)  Is num less than or equal to 50?<br/><br/>
+Note that both conditions have to be true for the if-condition to b evaluated
+as true. Essentially we are asking, “Is num between 40 and 50?”. The answer
+ in this case is yes, and so the print statement indicates that. </p>
+
+ <hr>
+  <br/>
+     <center><img src="image6.jpeg"  alt="HTML5 Icon" style="width:600px;height:300px;">
+     </center>
+     <br/><br/>
+ <hr>
+
+<p>
+  Since the value of ‘city’ is “Tokyo”, the else-if clause is evaluated as true.
+   Remember that only one part of an ‘or’ operator needs to be true in order
+   for the whole condition to become true. So even though ‘city’ is not “Nara”,
+   it makes no difference because the ‘city’ being “Tokyo” is enough to make the
+    whole clause true.
+
+</p>
+
+
+
+
+
+
+
+<div class="container-fluid" >
+  <ul class="pager">
+   <li class="previous"><a href="/Math/index.html" style= "background:#3ab4a6; color: white;">&laquo; Previous</a></li>
+    <li class="top"><a href="#" style= "background:#3ab4a6; color: white;">&#8679;Top</a></li>
+   <li class="next"><a href="/For loop/index.html" style= "background:#3ab4a6; color: white;" >Next &raquo;</a></li>
+ </ul>
+</div>
+
+  </div>
+</div>
+
+
+
+<div id='cssmenu'>
+<ul>
+<li class='active has-sub'><a href='#'>Home</a>
+<ul>
+<li><a href='/index.html'>What is Java?</a></li>
+</ul>
+</li>
+
+
+<li class='active has-sub'><a href='#'>Lessons</a>
+  <ul>
+     <li><a href='/Hello world/index.html'>Hello World</a> </li>
+     <li><a href='/Int/index.html'>Int Data Type</a></li>
+     <li><a href='/Double/index.html'>Double Data Type</a></li>
+     <li><a href='/Strings/index.html'>String and Char Data Type</a></li>
+     <li><a href='/Bool/index.html'>Boolean Data Type</a></li>
+     <li><a href='/Math/index.html'>Operators</a></li>
+  </ul>
+</li>
+
+<li class='active has-sub'><a href='#'>Control Statements</a>
+<ul>
+    <li><a href="/If/index.html">If-Else</a></li>
+    <li><a href='/For loop/index.html'>For-loop</a></li>
+    <li><a href='/While loop/index.html'>While-loop</a></li>
+    <li><a href='/Do while/index.html'>Do-While loop</a></li>
+
+  </ul>
+
+<li><a href='/Array/index.html' >Arrays</a><li>
+<li><a href='/Methods/index.html'>Methods</a><li>
+  <li><a href='/About/index.html' >About</a><li>
+
+
+</ul>
+</div>
+
+
+
+
+
+</body>
+</html>
